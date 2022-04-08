@@ -64,6 +64,7 @@ const routes: Routes = [
         strictStateSerializability: true
       }
     }),
+    EntityDataModule.forRoot({}),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
     EffectsModule.forRoot([]),
     StoreRouterConnectingModule.forRoot({
